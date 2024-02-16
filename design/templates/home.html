@@ -50,7 +50,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'ateams_main' %}">A-Teams</a>
+            <a class="nav-link" href="{% url 'ateams_main' %}">Designer</a>
           </li>
         </ul>
       </div>
@@ -72,25 +72,26 @@
 
       <section class="jumbotron text-center">
         <div>
-          <h1 class="jumbotron-heading bebas-font">Drone Delivery Testbed</h1>
+          <h1 class="jumbotron-heading bebas-font">Drone Design Testbed</h1>
 
-          <p><b>Participate in a game competition to design drones, plan delivery routes, and define markets strategies to satisfy food and parcel demands in a community</b></p>
+          <p><b>Design drones to meet specific criteria using different layouts and parts. Iterate through the design process to become more proficient in drone design. Adapted from <a href="https://github.com/hyform" target="_blank">Hyform Testbed</a>.</b></p>
 
           <div id="header"></div>
-
+          <!--
           {% if user.is_authenticated %}
           <b>Hi {{ user.username }}</b>
           <br>
           {% if experimenter %}
           <a href="experiment/" class="btn btn-secondary my-2">Session Management</a><br>
-          <!--<a href="/static/docs/session-management-tutorial.pdf" target="_blank">Session Management Tutorial</a><br>-->
+          COMMENTED<a href="/static/docs/session-management-tutorial.pdf" target="_blank">Session Management Tutorial</a><br>
           <a href="/static/docs/log_documentation.pdf" target="_blank">Data Log Documentation</a><br>
           {% endif %}
           <br>
           <p><a href="{% url 'logout' %}" class="btn btn-secondary my-2">logout</a></p>
-          {% else %}
-          <a href="{% url 'login' %}" class="btn btn-secondary my-2">Login</a>
-          <p>If login fails, please try again at the scheduled time or verify your credentials are correct.</p>
+          {% else %} -->
+          <!-- TODO redirect to design page -->
+          <a href="{% url 'login' %}" class="btn btn-secondary my-2">Start</a>
+          <p>Start designing drones!</p>
           {% endif %}
 
         </div>
