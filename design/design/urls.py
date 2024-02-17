@@ -46,6 +46,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('design/', views.ateams_design, name='design'),
+    
+    #ADDED
+    path('droneDesign/', views.designer_login, name='droneDesign'),
+
     path('ops/', views.ateams_ops, name='ops'),
     path('business/', views.ateams_business, name='business'),
     path('process/', views.ateams_process, name='process'),

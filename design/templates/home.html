@@ -45,7 +45,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bebas-font">
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src="/static/css/images/hyform-20.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        HyForm Testbed
+        LoForm Testbed
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -89,10 +89,10 @@
           <br>
           <p><a href="{% url 'logout' %}" class="btn btn-secondary my-2">logout</a></p>
           {% else %} -->
-          <!-- TODO redirect to design page -->
-          <a href="{% url 'login' %}" class="btn btn-secondary my-2">Start</a>
+          <!-- TODO redirect to design page, added to urls.py-->
+          <a href="{% url 'droneDesign' %}" class="btn btn-secondary my-2">Start</a>
           <p>Start designing drones!</p>
-          {% endif %}
+          <!-- {% endif %} -->
 
         </div>
       </section>

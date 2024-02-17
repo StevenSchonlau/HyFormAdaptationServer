@@ -25,6 +25,14 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+def designer_login(request):
+    context = {}
+    context['BUST'] = cache_bust()
+    response = None
+    context['redir'] = '/droneDesign/'
+    response = HttpResponse(render(request, "droneDesign.html", context))
+    return response
+
 def ateams_homepage(request):    
     context = {}
     context['BUST'] = cache_bust()
